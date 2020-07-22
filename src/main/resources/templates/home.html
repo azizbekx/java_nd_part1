@@ -79,7 +79,7 @@
                                     <tr>
                                         <td>
                                             <button type="button" class="btn btn-success" th:onclick="javascript:showNoteModal([[${notes}]])">Edit</button>
-                                            <a th:href="@{/note/delete(id=${notes.noteId})}" class="btn btn-danger">Delete</a>
+                                            <a th:href="@{/note(id=${notes.noteId})}" class="btn btn-danger">Delete</a>
                                         </td>
                                         <th th:text="${notes.noteTitle}" scope="row"></th>
                                         <td th:text="${notes.noteDescription}"></td>

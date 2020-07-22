@@ -4,6 +4,7 @@ public class Notes {
     private Integer noteId;
     private String noteTitle;
     private String noteDescription;
+    private String userId;
 
 
     public Notes() {
@@ -11,11 +12,11 @@ public class Notes {
     }
 
 
-    public Notes(Integer noteId, String noteTitle, String noteDescription) {
+    public Notes(Integer noteId, String noteTitle, String noteDescription, String userId) {
         this.noteId = noteId;
         this.noteTitle = noteTitle;
         this.noteDescription = noteDescription;
-
+        this.userId = userId;
 
     }
 
@@ -43,4 +44,20 @@ public class Notes {
         this.noteDescription = noteDescription;
     }
 
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+    @Override
+    public String toString() {
+        return "UserNoteVO{" +
+                "userId=" + userId +
+                ", noteId=" + noteId +
+                ", noteTitle='" + noteTitle + '\'' +
+                ", noteDescription='" + noteDescription + '\'' +
+                '}';
+    }
 }
