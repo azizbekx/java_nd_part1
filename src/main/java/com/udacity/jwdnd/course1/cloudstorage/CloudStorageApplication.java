@@ -1,13 +1,13 @@
-package com.udacity.jwdnd.c1.rewiev;
+package com.udacity.jwdnd.course1.cloudstorage;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RewievApplication {
+public class CloudStorageApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RewievApplication.class, args);
+		SpringApplication.run(CloudStorageApplication.class, args);
 	}
 
 }
